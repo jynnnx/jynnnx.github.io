@@ -32,7 +32,7 @@ DEALINGS IN THE SOFTWARE.
     }
    
     // var worker = new Worker(config.workerPath || WORKER_PATH);
-    var worker = new Worker();
+    var worker = new Worker(null);
     worker.postMessage({
       command: 'init',
       config: {
